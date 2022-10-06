@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'Build'  
+                sh 'docker build --tag jishnujoshy/python-docker'  
             }
         }
     }
