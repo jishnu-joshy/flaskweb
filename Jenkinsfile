@@ -19,6 +19,13 @@ pipeline {
                 sh 'docker push jishnujoshy/pythonapp'
             }
         }
+        stage('Deploying the appto kubernetes') {
+            steps {
+                script {
+                    kubernetesDeploy(configs: "deployment.yml", kubeconfigid:| "kubernetes")
+                }
+            }
+        }
     }
 }
 
