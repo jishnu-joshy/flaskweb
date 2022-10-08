@@ -13,3 +13,8 @@ pipeline{
     }
   }
 }
+
+
+docker plugin === Docker Commons Plugin
+
+kubernetes plugin ===== kubernets continues deployment
