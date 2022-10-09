@@ -18,3 +18,13 @@ pipeline{
 docker plugin === Docker Commons Plugin
 
 kubernetes plugin ===== kubernets continues deployment
+
+
+ [[[ stage('Deploying the appto kubernetes') {
+            steps {
+                script {
+                    kubernetesDeploy(configs: "deployment.yml", kubeconfigId:| "ff0a77db-1962-46a3-95f5-5ed6a0a246f8")
+                }
+            }
+        } 
+        ]]]
