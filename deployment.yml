@@ -27,7 +27,7 @@ spec:
       - name: pythonappserver
         image: jishnujoshy/pythonapp:latest
         ports:
-        - containerPort: 3000
+        - containerPort: 5000
         
         
 ---
