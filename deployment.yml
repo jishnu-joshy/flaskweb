@@ -6,6 +6,16 @@ metadata:
     name: development-test
     
 ---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: regcred
+  namespace: development
+data:
+  .dockerconfigjson: eyJhdXRocyI6eyJweXRob25hcHAiOnsidXNlcm5hbWUiOiJqaXNobnVqb3NoeSIsInBhc3N3b3JkIjoic2hhaXJzb24yIiwiZW1haWwiOiJqaXNobnVqb3NoeTY5OUBnbWFpb2wuY29tIiwiYXV0aCI6ImFtbHphRzUxYW05emFIazZjMmhoYVhKemIyNHkifX19
+type: kubernetes.io/dockerconfigjson    
+    
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
