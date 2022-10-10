@@ -12,19 +12,19 @@ metadata:
   name: nodeapp-deployment
   namespace: development
   labels:
-    app: jishnujoshy/pythonapp
+    app: pythonapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: jishnujoshy/pythonapp
+      app: pythonapp
   template:
     metadata:
       labels:
-        app: jishnujoshy/pythonapp 
+        app: pythonapp 
     spec:
       containers:
-      - name: nodeserver
+      - name: pythonappserver
         image: jishnujoshy/pythonapp:latest
         ports:
         - containerPort: 3000
@@ -39,7 +39,7 @@ metadata:
   namespace: development
 spec:
   selector:
-    app: jishnujoshy/pythonapp 
+    app: pythonapp 
   type: NodePort
   ports:
   - protocol: TCP
