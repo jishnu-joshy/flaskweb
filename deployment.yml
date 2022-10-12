@@ -9,7 +9,7 @@ metadata:
 apiVersion: v1
 kind: Secret
 metadata:
-  name: regcred
+  name: myregistrykeyy
   namespace: development
 data:
   .dockerconfigjson: ewoJImF1dGhzIjogewoJCSJodHRwczovL2luZGV4LmRvY2tlci5pby92MS8iOiB7CgkJCSJhdXRoIjogImFtbHphRzUxYW05emFIazZjMmhoYVhKemIyNHkiCgkJfQoJfQp9
