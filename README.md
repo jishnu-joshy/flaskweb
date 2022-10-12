@@ -28,3 +28,5 @@ kubernetes plugin ===== kubernets continues deployment
             }
         } 
         ]]]
+
+secret ------kubectl create secret docker-registry regcred --docker-server=pythonapp --docker-username=jishnujoshy  --docker-password=sdfdghh--docker-email=jishnujoshy699@gmaiol.com -n development
